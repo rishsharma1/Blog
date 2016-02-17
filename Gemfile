@@ -1,6 +1,8 @@
 source 'https://rubygems.org'
 
-# For rendering markdown files for the blog 
+# For the css framework
+gem 'bootstrap-sass', '3.2.0.0'
+# For rendering markdown files for the blog
 gem 'redcarpet', '~> 3.0.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.2'
