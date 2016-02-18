@@ -8,3 +8,34 @@
   filter: none;
   border: 0;
 }
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1;
+}
+
+h1 {
+  text-align: center;
+
+}
+
+/*Log in form */
+.row {
+
+  .form-control {
+    margin-bottom: 12px;
+  }
+}
+
+/* For the log in button */
+.custom {
+  width: 555px;
+}
+
+/* checkbox when you login */
+.checkbox {
+  margin-top: -10px;
+  margin-bottom: 10px;
+  span {
+    margin-left: 20px;
+    font-weight: normal;
+  }
+}
