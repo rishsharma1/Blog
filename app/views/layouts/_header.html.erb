@@ -5,13 +5,21 @@
         <li><%= link_to "Home", root_path %></li>
         <li><%= link_to "Contact", contact_path %></li>
       </ul>
+      <% if logged_in? %>
+        <button type="button" class="btn btn-default navbar-btn navbar-right">
+          <%= link_to "Log out", logout_path, method: "delete"%>
+        </button>
 
-      <button type="button" class="btn btn-default navbar-btn navbar-right">
-        <%= link_to "Log in", login_path %>
-      </button>
-      <button type="button" class="btn btn-default navbar-btn navbar-right">
-        <%= link_to "New post", login_path %>
-      </button>
+        <button type="button" class="btn btn-default navbar-btn navbar-right">
+          <%= link_to "New post", login_path %>
+        </button>
+
+      <% else %>
+        <button type="button" class="btn btn-default navbar-btn navbar-right">
+          <%= link_to "Log in", login_path %>
+        </button>
+      <% end %>
+
     </nav>
   </div>
 </header>

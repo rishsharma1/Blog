@@ -10,6 +10,7 @@ Rails.application.routes.draw do
 
   get 'posts/show'
   get 'login' => 'sessions#new'
+  post 'login' => 'sessions#create'
   delete 'logout' => 'sessions#destroy'
   get 'contact' => 'static_pages#contact'
 
