@@ -3,9 +3,14 @@
   <h1><%= link_to post.title, post %></h1>
 
   <p>
-    <%= markdown(post.content) %>
+    <%= post.description %>
   </p>
   <h5>Published <%= time_ago_in_words post.created_at %> ago</h5>
+  <% if logged_in? %>
+        <%= link_to "delete", post, method: :delete,
+                                  data: {confirm: "You sure?"} %>
+  <% end %>
+
 
   <% if post != @posts.last %>
   <hr />
