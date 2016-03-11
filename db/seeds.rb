@@ -30,9 +30,19 @@ Post.create(
 
   #Michael Fassbender Appreciation
   ------------------------------------------------
-  ![Fassbender](http://49.media.tumblr.com/tumblr_m5dfos72Gl1qzktzro1_500.gif)
+  <p align="center">
+  <img src="http://49.media.tumblr.com/tumblr_m5dfos72Gl1qzktzro1_500.gif" alt="Fassbender"/>
+  </p>
 
-  ![Fassbender](https://media.giphy.com/media/IfTeNljktJRx6/giphy.gif)
+  <p align="center">
+  <img src="https://media.giphy.com/media/IfTeNljktJRx6/giphy.gif" alt="Fassbender"/>
+  </p>
+
+  <p align="center">
+  <img src="http://media3.popsugar-assets.com/files/2015/07/17/970/n/1922398/8cff8e9ca636434d_0e5f6e720da6d29e_gif_500x660_3fb48dk058tb.xxxlarge/i/Boxer-Briefs-Always-Good-Idea.gif" alt="Fassbender"/>
+  </p>
+
+  
 
 
 

@@ -5,7 +5,7 @@ Rails.application.routes.draw do
 
   get 'users/new'
 
-  resources :posts, only: [:index, :show]
+  resources :posts, only: [:index, :show, :destroy]
   root 'posts#index'
 
   get 'posts/show'
