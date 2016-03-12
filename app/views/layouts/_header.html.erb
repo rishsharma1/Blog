@@ -1,7 +1,14 @@
 <header class="navbar navbar-default">
   <div class="container">
     <nav>
-      <ul class="nav navbar-nav navbar-left">
+      <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+
+        </div>
+      <ul class="nav navbar-nav navbar-left collapse navbar-collapse">
         <li><%= link_to "Home", root_path %></li>
         <li><%= link_to "Contact", contact_path %></li>
       </ul>
@@ -10,9 +17,16 @@
           <%= link_to "Log out", logout_path, method: "delete"%>
         </button>
 
-        <button type="button" class="btn btn-default navbar-btn navbar-right">
-          <%= link_to "New post", login_path %>
-        </button>
+        <% if !@post.nil? && !@post[:id].nil? %>
+          <button type="button" class="btn btn-default navbar-btn navbar-right">
+            <%= link_to "Edit", edit_post_path(@post) %>
+          </button>
+
+        <% else %>
+          <button type="button" class="btn btn-default navbar-btn navbar-right">
+            <%= link_to "New", new_path %>
+          </button>
+        <%end%>
 
       <% else %>
         <button type="button" class="btn btn-default navbar-btn navbar-right">
