@@ -8,7 +8,7 @@ module ApplicationHelper
 
   def markdown(text)
 
-    coderayified = CodeRayify.new(:filter_html => true,
+    coderayified = CodeRayify.new(:filter_html => false,
     :hard_wrap => true)
 
     extensions = {
