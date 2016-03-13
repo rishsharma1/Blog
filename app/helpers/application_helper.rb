@@ -6,7 +6,8 @@ module ApplicationHelper
       hard_wrap:       true,
       link_attributes: { rel: 'nofollow', target: "_blank" },
       space_after_headers: true,
-      fenced_code_blocks: true
+      fenced_code_blocks: true,
+      prettify: true 
     }
 
     extensions = {
