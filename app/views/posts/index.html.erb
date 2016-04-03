@@ -2,7 +2,7 @@
 <% @posts.each do |post| %>
   <h1><%= link_to post.title, post %></h1>
 
-  <p>
+  <p class="width-handler">
     <%= post.description %>
   </p>
   <h5>Published <%= time_ago_in_words post.created_at %> ago</h5>

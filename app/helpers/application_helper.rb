@@ -20,7 +20,8 @@ module ApplicationHelper
       link_attributes: { rel: 'nofollow', target: "_blank" },
       space_after_headers: true,
       fenced_code_blocks: true,
-      prettify: true
+      prettify: true,
+      no_intra_emphasis: true
     }
 
     renderer = Redcarpet::Render::HTML.new(extensions)
